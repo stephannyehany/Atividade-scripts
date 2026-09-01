@@ -1,0 +1,323 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aventura Extrema - Formulário</title>
+</head>
+
+<body bgcolor="#0b0b0b" text="white" link="#ff6a00" alink="#ff8533" vlink="#ff6a00">
+
+<center>
+
+<marquee behavior="alternate" scrollamount="6">
+
+<h1>
+<font face="Arial" color="white">
+🏔️ AVENTURA
+</font>
+
+<font face="Arial" color="#ff6a00">
+EXTREMA
+</font>
+</h1>
+
+</marquee>
+
+</center>
+
+
+<form name="frm_expedicao">
+
+<fieldset>
+
+<legend>
+<font face="Arial" size="5">
+<b>DADOS DO ALPINISTA</b>
+</font>
+</legend>
+
+<font face="Arial" size="4">
+
+<p>
+
+<label><b>Nome Completo do Alpinista</b></label><br>
+
+<input type="text"
+placeholder="Insira seu nome"
+size="60"
+maxlength="60"
+required="yes">
+
+<br><br>
+
+
+<label><b>Selecione uma data para embarque (Nepal ou Paquistão)</b></label><br>
+
+<input type="date"
+value="2026-08-25"
+min="2026-01-01"
+max="2026-12-31">
+
+<br><br>
+
+
+<label><b>Selecione a idade</b></label><br>
+
+<input type="number" min="18" max="75">
+
+<br><br>
+
+
+<label><b>Ponto de Partida/Origem</b></label><br>
+
+<select>
+
+<option>São Paulo</option>
+<option>Brasília</option>
+<option>Rio de Janeiro</option>
+
+</select>
+
+<br><br>
+
+
+<label><b>País de desembarque/Destino Final</b></label>
+
+<ul>
+
+<li>
+<input type="checkbox" name="pais">
+NEPAL
+</li>
+
+<li>
+<input type="checkbox" name="pais">
+PAQUISTÃO
+</li>
+
+</ul>
+
+<br>
+
+
+<label><b>Selecione a Montanha desejada</b></label><br>
+
+<select>
+
+<option>
+NEPAL (Monte Everest - 8.848 metros montanha mais alta do mundo)
+</option>
+
+<option>
+NEPAL (Kangchenjunga - 8.586 metros terceira mais alta do mundo)
+</option>
+
+<option>
+NEPAL (Lhotse - 8.516 metros Quarta maior montanha do mundo)
+</option>
+
+<option>
+NEPAL (Makalu - 8.485 metros Quinta maior montanha do mundo)
+</option>
+
+<option>
+NEPAL (Cho Oyu - 8.188 metros Sexta maior montanha do mundo)
+</option>
+
+<option>
+NEPAL (Dhaulagiri I - 8.167 metros Sétima maior montanha do mundo)
+</option>
+
+<option>
+NEPAL (Manaslu - 8.163 metros Oitava maior montanha do mundo)
+</option>
+
+<option>
+NEPAL (Annapurna I - 8.091 metros Décima maior montanha do mundo)
+</option>
+
+<option>
+PAQUISTÃO (K2 - 8.611 metros Segunda maior montanha do mundo)
+</option>
+
+<option>
+PAQUISTÃO (Nanga Parbat - 8.126 metros Nona maior montanha do mundo)
+</option>
+
+<option>
+PAQUISTÃO (Gasherbrum I - 8.080 metros Décima primeira maior montanha do mundo)
+</option>
+
+<option>
+PAQUISTÃO (Broad Peak - 8.051 metros Décima segunda maior montanha do mundo)
+</option>
+
+<option>
+PAQUISTÃO (Gasherbrum II - 8.035 metros Décima terceira maior montanha do mundo)
+</option>
+
+</select>
+
+<br><br>
+
+
+<label><b>Selecione uma data para retorno</b></label><br>
+
+<input type="date"
+value="2026-08-25"
+min="2026-01-01"
+max="2026-12-31">
+
+<br><br>
+
+
+<label><b>Equipamentos que você já possui:</b></label>
+
+<ul type="none">
+
+<li>
+<input type="checkbox" name="equipamentos">
+Bota Dupla de Alta Montanha
+</li>
+
+<li>
+<input type="checkbox" name="equipamentos">
+Macacão Térmico de Pena (Down Suit)
+</li>
+
+<li>
+<input type="checkbox" name="equipamentos">
+Crampons e Piolet
+</li>
+
+<li>
+<input type="checkbox" name="equipamentos">
+Kit de Escalada (Cadeirinha, Mosquetões e Jumar)
+</li>
+
+<li>
+<input type="checkbox" name="equipamentos">
+Sistema de Oxigênio Suplementar
+</li>
+
+<li>
+<input type="checkbox" name="equipamentos">
+Óculos de Geleira UV400 / Goggles
+</li>
+
+<li>
+<input type="checkbox" name="equipamentos">
+Saco de Dormir para Frio Extremo (-40 °C)
+</li>
+
+<li>
+<input type="checkbox" name="equipamentos">
+Lanterna de Cabeça + Baterias Extra
+</li>
+
+</ul>
+
+<br>
+
+
+<label><b>Histórico de Escaladas / Observações</b></label><br>
+
+<textarea
+cols="50"
+rows="6"
+placeholder="Liste montanhas que já escalou e observações...">
+</textarea>
+
+</p>
+
+</font>
+
+</fieldset>
+
+
+<br>
+<fieldset>
+
+<legend>
+<font face="Arial" size="5">
+<b>NÍVEL DE EXPERIÊNCIA (Escolha seu tema):</b>
+</font>
+</legend>
+
+<font face="Arial" size="4">
+
+<input type="radio" name="cor"
+onclick="document.bgColor='#000000'; document.fgColor='white'">
+Iniciante
+
+&nbsp;&nbsp;&nbsp;
+
+<input type="radio" name="cor"
+onclick="document.bgColor='#4A0E0E'; document.fgColor='white'">
+Intermediário
+
+&nbsp;&nbsp;&nbsp;
+
+<input type="radio" name="cor"
+onclick="document.bgColor='#0F380F'; document.fgColor='white'">
+Avançado
+
+&nbsp;&nbsp;&nbsp;
+
+<input type="radio" name="cor"
+onclick="document.bgColor='#0b0b0b'; document.fgColor='white'">
+Padrão
+
+</font>
+
+<br>
+
+</fieldset>
+
+
+
+<br><br>
+
+
+<center>
+
+<font face="Arial" size="4">
+
+<input type="submit" value="ENVIAR DADOS">
+
+&nbsp;&nbsp;&nbsp;
+
+<input type="reset" value="LIMPAR DADOS">
+
+</font>
+
+<br><br>
+
+
+<a href="https://www.muchbetteradventures.com/magazine/10-best-hikes-mountains-in-asia/"
+target="_blank">
+
+<img src="saibamais.gif"
+width="120"
+height="120"
+alt="Saiba mais">
+
+<br>
+
+<font face="Arial" color="#ff6a00" size="3">
+
+<b>
+🌐 Guia Completo: Saiba mais sobre as 10 montanhas mais altas da Ásia
+</b>
+
+</font>
+
+</a>
+
+</center>
+
+</form>
+
+</body>
+
+</html>
